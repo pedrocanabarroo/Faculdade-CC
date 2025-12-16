@@ -1,0 +1,20 @@
+(ativar o roteador)
+
+#enable
+#conf t
+#int f (número) 
+#ip add (ip - máscara)
+#no shut
+#exit
+#exit
+wr
+
+
+(configurar a rota)
+
+#enable
+#conf t
+#int f (número)
+#ip route (ip da rede -- mascara -- ip do roteador)
+#do sh run
+

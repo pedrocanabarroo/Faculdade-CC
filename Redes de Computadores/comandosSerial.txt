@@ -1,0 +1,12 @@
+configuração de cabo serial
+
+en
+#conf t
+#int s
+#ip add <ip da placa de rede> <mascara da placa de rede>
+#do sh int s 
+#encapsulation ppp
+#do sh int s
+#clock rate 250000 (só vai no roteador que tem a conexão serial com o relógio)
+#no shut
+##do sh int s

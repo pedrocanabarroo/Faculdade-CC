@@ -1,0 +1,25 @@
+# configurar nginx no ubuntu/linux
+
+sudo apt update
+sudo apt install nginx
+
+# após a instalação, código para iniciar o servidor nginx
+
+sudo systemctl start nginx
+
+# Para garantir que o Nginx inicie automaticamente sempre que o servidor for reiniciado, use o comando:
+
+sudo systemctl enable nginx
+
+#O arquivo de configuração principal do Nginx está em /etc/nginx/nginx.conf, mas as configurações de sites geralmente ficam em /etc/nginx/sites-available/ 
+#(em distribuições como Ubuntu) e links simbólicos para esse diretório são feitos em /etc/nginx/sites-enabled/.
+
+# Criando um novo arquivo de configuração para seu site
+
+#Criar um arquivo de configuração no diretório sites-available:
+
+# Suponha que você queira configurar um site chamado meusite.com. Crie um arquivo de configuração:
+
+  sudo nano /etc/nginx/sites-available/meusite.com
+
+  
