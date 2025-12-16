@@ -18,8 +18,6 @@ Universidade Franciscana (UFN)
 - Língua Brasileira de Sinais
 - Organização e Arquitetura de Computadores
 
-📂 Pasta: `/semestre-01/`
-
 ---
 
 ### 🔹 2º Semestre - 2025/1
@@ -28,7 +26,6 @@ Universidade Franciscana (UFN)
 - Comunicação de Dados
 - Introdução a Computação
 
-📂 Pasta: `/semestre-02/`
 
 ---
 
@@ -41,9 +38,6 @@ Universidade Franciscana (UFN)
 - Atenção Integral à Saúde no Esporte
 - Programação de Sistemas
 
-📂 Pasta: `/semestre-03/`
 
 ---
 
-📫 **Contato**  
-Caso queira trocar ideias ou tirar dúvidas, fique à vontade para entrar em contato!
