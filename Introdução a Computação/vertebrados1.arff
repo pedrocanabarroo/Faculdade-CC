@@ -1,0 +1,15 @@
+@relation vertebrados
+
+@attribute nome {humano, piton, salmao, baleia, sapo, dragao_de_komodo, morcego, pomba, gato, leopardo, tubarao, tartaruga, pinguim, porco_espinho, enguia, salamandra, gila}
+@attribute temp {quente, frio}
+@attribute pele {nenhuma, cabelo, escamas, penas, pelo, espinhos}
+@attribute cria {sim, nao}
+@attribute aquatico {sim, nao, semi}
+@attribute aereo {sim, nao}
+@attribute pernas {sim, nao}
+@attribute hiberna {sim, nao}
+@attribute classe {mamifero, reptil, peixe, anfibio, ave}
+
+@data
+
+gila,frio,escamas,nao,nao,nao,sim,sim,mamifero

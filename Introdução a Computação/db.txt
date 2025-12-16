@@ -1,0 +1,370 @@
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| sakila             |
+| sys                |
+| world              |
++--------------------+
+6 rows in set (0.00 sec)
+
+mysql> create database vertebrados;
+Query OK, 1 row affected (0.00 sec)
+
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| sakila             |
+| sys                |
+| vertebrados        |
+| world              |
++--------------------+
+7 rows in set (0.00 sec)
+
+mysql> use vertebrados
+Database changed
+mysql> show tables;
+Empty set (0.01 sec)
+
+mysql> create table vertebrados;
+ERROR 4028 (HY000): A table must have at least one visible column.
+mysql> create table vertebrados(
+    -> nome varchar (20),
+    -> temp varchar (10),
+    -> pele varchar (10),
+    -> cria varchar (3),
+    -> aquatico varchar (4),
+    -> aereo varchar (3),
+    -> pernas varchar (3),
+    -> hiberna varchar (3),
+    -> classe varchar (10))
+    -> ;
+Query OK, 0 rows affected (0.02 sec)
+
+mysql> show tables;
++-----------------------+
+| Tables_in_vertebrados |
++-----------------------+
+| vertebrados           |
++-----------------------+
+1 row in set (0.00 sec)
+
+mysql> desc vertebrados;
++----------+-------------+------+-----+---------+-------+
+| Field    | Type        | Null | Key | Default | Extra |
++----------+-------------+------+-----+---------+-------+
+| nome     | varchar(20) | YES  |     | NULL    |       |
+| temp     | varchar(10) | YES  |     | NULL    |       |
+| pele     | varchar(10) | YES  |     | NULL    |       |
+| cria     | varchar(3)  | YES  |     | NULL    |       |
+| aquatico | varchar(3)  | YES  |     | NULL    |       |
+| aereo    | varchar(3)  | YES  |     | NULL    |       |
+| pernas   | varchar(3)  | YES  |     | NULL    |       |
+| hiberna  | varchar(3)  | YES  |     | NULL    |       |
+| classe   | varchar(10) | YES  |     | NULL    |       |
++----------+-------------+------+-----+---------+-------+
+9 rows in set (0.01 sec)
+
+mysql> select * from vertebrados;
+Empty set (0.00 sec)
+
+mysql> insert into vertebrados (nome, temp, pele, cria, aquatico, aereo, pernas, hiberna, classe) values ('humano','quente','cabelo','sim','nao','nao','sim','nao','mamifero');
+Query OK, 1 row affected (0.01 sec)
+
+mysql> select * from vertebrados;
++--------+--------+--------+------+----------+-------+--------+---------+----------+
+| nome   | temp   | pele   | cria | aquatico | aereo | pernas | hiberna | classe   |
++--------+--------+--------+------+----------+-------+--------+---------+----------+
+| humano | quente | cabelo | sim  | nao      | nao   | sim    | nao     | mamifero |
++--------+--------+--------+------+----------+-------+--------+---------+----------+
+1 row in set (0.00 sec)
+
+mysql> insert into vertebrados (nome, temp, pele, cria, aquatico, aereo, pernas, hiberna, classe) values ('piton','frio','escamas','nao','nao','nao','nao','sim','reptil');
+
+
+Enter password: ***********
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 8
+Server version: 8.0.31 MySQL Community Server - GPL
+
+Copyright (c) 2000, 2022, Oracle and/or its affiliates.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| sakila             |
+| sys                |
+| world              |
++--------------------+
+6 rows in set (0.02 sec)
+
+mysql> create database vertebrados;
+Query OK, 1 row affected (0.01 sec)
+
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| sakila             |
+| sys                |
+| vertebrados        |
+| world              |
++--------------------+
+7 rows in set (0.00 sec)
+
+mysql> use vertebrados;
+Database changed
+mysql> show tables;
+Empty set (0.02 sec)
+
+mysql> create table vertebrados(
+    -> nome varchar (20),
+    -> temp varchar (10),
+    -> pele varchar (10),
+    -> cria varchar (3),
+    -> aquatico varchar (4),
+    -> aereo varchar (3),
+    -> pernas varchar (3),
+    -> hiberna varchar (3),
+    -> classe varchar (10))
+    -> ;
+Query OK, 0 rows affected (0.02 sec)
+
+mysql> show tables
+    ->
+    -> ;
++-----------------------+
+| Tables_in_vertebrados |
++-----------------------+
+| vertebrados           |
++-----------------------+
+1 row in set (0.00 sec)
+
+mysql> desc vertebrados;
++----------+-------------+------+-----+---------+-------+
+| Field    | Type        | Null | Key | Default | Extra |
++----------+-------------+------+-----+---------+-------+
+| nome     | varchar(20) | YES  |     | NULL    |       |
+| temp     | varchar(10) | YES  |     | NULL    |       |
+| pele     | varchar(10) | YES  |     | NULL    |       |
+| cria     | varchar(3)  | YES  |     | NULL    |       |
+| aquatico | varchar(4)  | YES  |     | NULL    |       |
+| aereo    | varchar(3)  | YES  |     | NULL    |       |
+| pernas   | varchar(3)  | YES  |     | NULL    |       |
+| hiberna  | varchar(3)  | YES  |     | NULL    |       |
+| classe   | varchar(10) | YES  |     | NULL    |       |
++----------+-------------+------+-----+---------+-------+
+9 rows in set (0.01 sec)
+
+mysql> select * from vertebrados;
+Empty set (0.01 sec)
+
+mysql> insert into vertebrados (nome, temp, pele, cria, aquatico, aereo, pernas, hiberna, classe) values ('humano','quen
+te','cabelo','sim','nao','nao','sim','nao','mamifero');
+Query OK, 1 row affected (0.01 sec)
+
+mysql> select * from vertebrados;
++--------+--------+--------+------+----------+-------+--------+---------+----------+
+| nome   | temp   | pele   | cria | aquatico | aereo | pernas | hiberna | classe   |
++--------+--------+--------+------+----------+-------+--------+---------+----------+
+| humano | quente | cabelo | sim  | nao      | nao   | sim    | nao     | mamifero |
++--------+--------+--------+------+----------+-------+--------+---------+----------+
+1 row in set (0.00 sec)
+
+mysql> insert into vertebrados (nome, temp, pele, cria, aquatico, aereo, pernas, hiberna, classe) values ('piton','frio','escamas','nao','nao','nao','nao','sim','reptil');
+Query OK, 1 row affected (0.01 sec)
+
+mysql> select * from vertebrados;
++--------+--------+---------+------+----------+-------+--------+---------+----------+
+| nome   | temp   | pele    | cria | aquatico | aereo | pernas | hiberna | classe   |
++--------+--------+---------+------+----------+-------+--------+---------+----------+
+| humano | quente | cabelo  | sim  | nao      | nao   | sim    | nao     | mamifero |
+| piton  | frio   | escamas | nao  | nao      | nao   | nao    | sim     | reptil   |
++--------+--------+---------+------+----------+-------+--------+---------+----------+
+2 rows in set (0.00 sec)
+
+mysql> INSERT INTO vertebrados (nome, temp, pele, cria, aquatico, aereo, pernas, hiberna, classe) VALUES
+    -> ('piton','frio','escamas','nao','nao','nao','sim','nao','repteis'),
+    -> ('salmao','frio','escamas','nao','sim','nao','nao','nao','peixe'),
+    -> ('baleia','quente','cabelo','sim','sim','nao','nao','nao','mamifero'),
+    -> ('sapo','frio','nenhuma','nao','sim','nao','sim','sim','anfibio'),
+    -> ('dragao de komodo','frio','escamas','nao','nao','nao','sim','sim','repteis'),
+    -> ('morcego','quente','cabelo','sim','nao','sim','sim','nao','mamifero'),
+    -> ('pomba','quente','penas','nao','nao','sim','sim','nao','ave'),
+    -> ('gato','quente','pelo','sim','nao','nao','sim','nao','mamifero'),
+    -> ('leopardo','quente','pelo','sim','nao','nao','sim','nao','mamifero'),
+    -> ('tubarao','frio','escamas','nao','sim','nao','sim','nao','peixe'),
+    -> ('tartaruga','frio','escamas','nao','semi','nao','sim','sim','repteis'),
+    -> ('pinguim','quente','penas','nao','semi','nao','sim','nao','ave'),
+    -> ('porco-espinho','quente','espinhos','sim','nao','nao','sim','sim','mamifero'),
+    -> ('enguia','frio','escamas','nao','sim','nao','nao','nao','peixe'),
+    -> ('salamandra','frio','nenhuma','nao','semi','nao','sim','sim','anfibio');
+ERROR 1406 (22001): Data too long for column 'aquatico' at row 11
+mysql>
+mysql> insert into vertebrados (nome, temp, pele, cria, aquatico, aereo, pernas, hiberna, classe) values ('salmao','frio','escamas','nao','sim','nao','nao','nao','peixe'),
+    -> ('baleia','quente','cabelo','sim','sim','nao','nao','nao','mamifero'),
+    -> ('sapo','frio','nenhuma','nao','sim','nao','sim','sim','anfibio'),
+    -> ('dragao de komodo','frio','escamas','nao','nao','nao','sim','sim','repteis'),
+    -> ('morcego','quente','cabelo','sim','nao','sim','sim','nao','mamifero'),
+    -> ('pomba','quente','penas','nao','nao','sim','sim','nao','ave'),
+    -> ('gato','quente','pelo','sim','nao','nao','sim','nao','mamifero'),
+    -> ('leopardo','quente','pelo','sim','nao','nao','sim','nao','mamifero'),
+    -> ('tubarao','frio','escamas','nao','sim','nao','sim','nao','peixe'),
+    -> ('tartaruga','frio','escamas','nao','semi','nao','sim','sim','repteis'),
+    -> ('pinguim','quente','penas','nao','semi','nao','sim','nao','ave'),
+    -> ('porco-espinho','quente','espinhos','sim','nao','nao','sim','sim','mamifero'),
+    -> ('enguia','frio','escamas','nao','sim','nao','nao','nao','peixe'),
+    -> ('salamandra','frio','nenhuma','nao','semi','nao','sim','sim','anfibio');
+ERROR 1406 (22001): Data too long for column 'aquatico' at row 10
+mysql> insert into vertebrados (nome, temp, pele, cria, aquatico, aereo, pernas, hiberna, classe) values ('salmao','frio','escamas','nao','sim','nao','nao','nao','peixe');
+Query OK, 1 row affected (0.03 sec)
+
+mysql> insert into vertebrados (nome, temp, pele, cria, aquatico, aereo, pernas, hiberna, classe) values ('baleia','quente','cabelo','sim','sim','nao','nao','nao','mamifero');
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into vertebrados (nome, temp, pele, cria, aquatico, aereo, pernas, hiberna, classe) values ('sapo','frio','nenhuma','nao','sim','nao','sim','sim','anfibio');
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into vertebrados (nome, temp, pele, cria, aquatico, aereo, pernas, hiberna, classe) values ('dragao de komodo','frio','escamas','nao','nao','nao','sim','sim','repteis');
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into vertebrados (nome, temp, pele, cria, aquatico, aereo, pernas, hiberna, classe) values ('morcego','quente','cabelo','sim','nao','sim','sim','nao','mamifero');
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into vertebrados (nome, temp, pele, cria, aquatico, aereo, pernas, hiberna, classe) values ('pomba','quente','penas','nao','nao','sim','sim','nao','ave');
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into vertebrados (nome, temp, pele, cria, aquatico, aereo, pernas, hiberna, classe) values ('gato','quente','pelo','sim','nao','nao','sim','nao','mamifero');
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into vertebrados (nome, temp, pele, cria, aquatico, aereo, pernas, hiberna, classe) values ('leopardo','quente','pelo','sim','nao','nao','sim','nao','mamifero');
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into vertebrados (nome, temp, pele, cria, aquatico, aereo, pernas, hiberna, classe) values ('tubarao','frio','escamas','nao','sim','nao','sim','nao','peixe');
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into vertebrados (nome, temp, pele, cria, aquatico, aereo, pernas, hiberna, classe) values ('tartaruga','frio','escamas','nao','semi','nao','sim','sim','repteis');
+ERROR 1406 (22001): Data too long for column 'aquatico' at row 1
+mysql> insert into vertebrados (nome, temp, pele, cria, aquatico, aereo, pernas, hiberna, classe) values ('tartaruga','frio','escamas','nao','nao','nao','sim','sim','repteis');
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into vertebrados (nome, temp, pele, cria, aquatico, aereo, pernas, hiberna, classe) values ('pinguim','quente','penas','nao','semi','nao','sim','nao','ave');
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into vertebrados (nome, temp, pele, cria, aquatico, aereo, pernas, hiberna, classe) values ('porco-espinho','quente','espinhos','sim','nao','nao','sim','sim','mamifero');
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into vertebrados (nome, temp, pele, cria, aquatico, aereo, pernas, hiberna, classe) values ('enguia','frio','escamas','nao','sim','nao','nao','nao','peixe');
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into vertebrados (nome, temp, pele, cria, aquatico, aereo, pernas, hiberna, classe) values ('salamandra','frio','nenhuma','nao','semi','nao','sim','sim','anfibio');
+Query OK, 1 row affected (0.00 sec)
+
+mysql> select * from vertebrados;
++------------------+--------+----------+------+----------+-------+--------+---------+----------+
+| nome             | temp   | pele     | cria | aquatico | aereo | pernas | hiberna | classe   |
++------------------+--------+----------+------+----------+-------+--------+---------+----------+
+| humano           | quente | cabelo   | sim  | nao      | nao   | sim    | nao     | mamifero |
+| piton            | frio   | escamas  | nao  | nao      | nao   | nao    | sim     | reptil   |
+| salmao           | frio   | escamas  | nao  | sim      | nao   | nao    | nao     | peixe    |
+| baleia           | quente | cabelo   | sim  | sim      | nao   | nao    | nao     | mamifero |
+| sapo             | frio   | nenhuma  | nao  | sim      | nao   | sim    | sim     | anfibio  |
+| dragao de komodo | frio   | escamas  | nao  | nao      | nao   | sim    | sim     | repteis  |
+| morcego          | quente | cabelo   | sim  | nao      | sim   | sim    | nao     | mamifero |
+| pomba            | quente | penas    | nao  | nao      | sim   | sim    | nao     | ave      |
+| gato             | quente | pelo     | sim  | nao      | nao   | sim    | nao     | mamifero |
+| leopardo         | quente | pelo     | sim  | nao      | nao   | sim    | nao     | mamifero |
+| tubarao          | frio   | escamas  | nao  | sim      | nao   | sim    | nao     | peixe    |
+| tartaruga        | frio   | escamas  | nao  | semi      | nao   | sim    | sim     | repteis  |
+| pinguim          | quente | penas    | nao  | semi      | nao   | sim    | nao     | ave      |
+| porco-espinho    | quente | espinhos | sim  | nao      | nao   | sim    | sim     | mamifero |
+| enguia           | frio   | escamas  | nao  | sim      | nao   | nao    | nao     | peixe    |
+| salamandra       | frio   | nenhuma  | nao  | semi      | nao   | sim    | sim     | anfibio  |
++------------------+--------+----------+------+----------+-------+--------+---------+----------+
+16 rows in set (0.00 sec)
+
+mysql> UPDATE vertebrados SET aquatico = 'semi' WHERE nome = 'salamandra';
+Query OK, 1 row affected (0.01 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> UPDATE vertebrados SET aquatico = 'semi' WHERE nome = 'pinguim';
+Query OK, 1 row affected (0.00 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> DELETE FROM animais
+    -> WHERE nome = 'tartaruga' AND aquatico = 'semi'
+    -> ;
+ERROR 1146 (42S02): Table 'vertebrados.animais' doesn't exist
+mysql> DELETE FROM vertebrados WHERE nome = 'tartaruga' AND aquatico = 'semi' LIMIT 1;
+Query OK, 1 row affected (0.01 sec)
+
+mysql> select * from vertebrados;
++------------------+--------+----------+------+----------+-------+--------+---------+----------+
+| nome             | temp   | pele     | cria | aquatico | aereo | pernas | hiberna | classe   |
++------------------+--------+----------+------+----------+-------+--------+---------+----------+
+| humano           | quente | cabelo   | sim  | nao      | nao   | sim    | nao     | mamifero |
+| piton            | frio   | escamas  | nao  | nao      | nao   | nao    | sim     | reptil   |
+| salmao           | frio   | escamas  | nao  | sim      | nao   | nao    | nao     | peixe    |
+| baleia           | quente | cabelo   | sim  | sim      | nao   | nao    | nao     | mamifero |
+| sapo             | frio   | nenhuma  | nao  | sim      | nao   | sim    | sim     | anfibio  |
+| dragao de komodo | frio   | escamas  | nao  | nao      | nao   | sim    | sim     | repteis  |
+| morcego          | quente | cabelo   | sim  | nao      | sim   | sim    | nao     | mamifero |
+| pomba            | quente | penas    | nao  | nao      | sim   | sim    | nao     | ave      |
+| gato             | quente | pelo     | sim  | nao      | nao   | sim    | nao     | mamifero |
+| leopardo         | quente | pelo     | sim  | nao      | nao   | sim    | nao     | mamifero |
+| tubarao          | frio   | escamas  | nao  | sim      | nao   | sim    | nao     | peixe    |
+| tartaruga        | frio   | escamas  | nao  | nao      | nao   | sim    | sim     | repteis  |
+| pinguim          | quente | penas    | nao  | semi     | nao   | sim    | nao     | ave      |
+| porco-espinho    | quente | espinhos | sim  | nao      | nao   | sim    | sim     | mamifero |
+| enguia           | frio   | escamas  | nao  | sim      | nao   | nao    | nao     | peixe    |
+| salamandra       | frio   | nenhuma  | nao  | semi     | nao   | sim    | sim     | anfibio  |
++------------------+--------+----------+------+----------+-------+--------+---------+----------+
+16 rows in set (0.00 sec)
+
+mysql> UPDATE vertebrados SET aquatico = 'semi' WHERE nome = 'tartaruga';
+Query OK, 1 row affected (0.00 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> select * from vertebrados;
++------------------+--------+----------+------+----------+-------+--------+---------+----------+
+| nome             | temp   | pele     | cria | aquatico | aereo | pernas | hiberna | classe   |
++------------------+--------+----------+------+----------+-------+--------+---------+----------+
+| humano           | quente | cabelo   | sim  | nao      | nao   | sim    | nao     | mamifero |
+| piton            | frio   | escamas  | nao  | nao      | nao   | nao    | sim     | reptil   |
+| salmao           | frio   | escamas  | nao  | sim      | nao   | nao    | nao     | peixe    |
+| baleia           | quente | cabelo   | sim  | sim      | nao   | nao    | nao     | mamifero |
+| sapo             | frio   | nenhuma  | nao  | sim      | nao   | sim    | sim     | anfibio  |
+| dragao de komodo | frio   | escamas  | nao  | nao      | nao   | sim    | sim     | repteis  |
+| morcego          | quente | cabelo   | sim  | nao      | sim   | sim    | nao     | mamifero |
+| pomba            | quente | penas    | nao  | nao      | sim   | sim    | nao     | ave      |
+| gato             | quente | pelo     | sim  | nao      | nao   | sim    | nao     | mamifero |
+| leopardo         | quente | pelo     | sim  | nao      | nao   | sim    | nao     | mamifero |
+| tubarao          | frio   | escamas  | nao  | sim      | nao   | sim    | nao     | peixe    |
+| tartaruga        | frio   | escamas  | nao  | semi     | nao   | sim    | sim     | repteis  |
+| pinguim          | quente | penas    | nao  | semi     | nao   | sim    | nao     | ave      |
+| porco-espinho    | quente | espinhos | sim  | nao      | nao   | sim    | sim     | mamifero |
+| enguia           | frio   | escamas  | nao  | sim      | nao   | nao    | nao     | peixe    |
+| salamandra       | frio   | nenhuma  | nao  | semi     | nao   | sim    | sim     | anfibio  |
++------------------+--------+----------+------+----------+-------+--------+---------+----------+
+16 rows in set (0.00 sec)
+
