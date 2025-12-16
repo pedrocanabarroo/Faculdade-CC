@@ -22,21 +22,21 @@ Universidade Franciscana (UFN)
 
 ### 🔹 2º Semestre - 2025/1
 - Algoritmos e Programação A
-- Programação Orientada a Objetos
 - Comunicação de Dados
-- Introdução a Computação
+- Introdução à Computação
+- Programação Orientada a Objetos
 
 
 ---
 
 ### 🔹 3º Semestre - 2025/2
 - Algoritmos e Programação B
-- Redes de Computadores
-- Modelagem e Simulação
-- Inovação Tecnológica e Empreendedorismo
-- Educação e Identidade Cultural
 - Atenção Integral à Saúde no Esporte
+- Educação e Identidade Cultural
+- Inovação Tecnológica e Empreendedorismo
+- Modelagem e Simulação
 - Programação de Sistemas
+- Redes de Computadores
 
 
 ---
