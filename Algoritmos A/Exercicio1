@@ -1,0 +1,45 @@
+<exercicio1>
+#include <stdio.h>
+int main(){
+
+float L1, L2, h, volume;
+
+printf("Digite as 3 medidas da caixa: \n");
+
+scanf("%f", &L1);
+scanf("%f", &L2);
+scanf("%f", &h);
+
+//Calculo do volume
+
+volume = (L1 * L2 * h);
+
+printf("A caixa tem o volume de: = %.2f\n", volume);
+
+return 0;
+
+<exercicio2>
+
+#include <stdio.h>
+int main(){
+
+float salario, reajuste, novosalario, valor_reajuste;
+
+printf("Salario:");
+scanf("%f", &salario);
+
+printf("Reajuste %%");
+scanf("%f", &reajuste);
+
+valor_reajuste = (salario * reajuste)/100;
+novosalario = valor_reajuste + salario;
+
+printf("O novo salario: = R$ %.2f",novosalario);
+
+return 0;
+
+
+
+
+
+
