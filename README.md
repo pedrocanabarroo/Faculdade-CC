@@ -41,3 +41,11 @@ Universidade Franciscana (UFN)
 
 ---
 
+### 🔹 4º Semestre - 2026/1
+- Aplicativos Móveis
+- Engenharia e Requisitos de Software
+- Estruturas de Dados
+- Linguagens Formais e Autômatos
+- Programação .NET
+- Projeto de Banco de Dados
+
