@@ -1,0 +1,8 @@
+1 - Crie uma classe "Jogo" com os seguintes atributos: Título, Gênero, Plataforma (por exemplo, PC, Xbox, PlayStation), Ano de lançamento. Na main, instancie um objeto e faça a leitura pelo teclado.
+
+2 - Crie uma classe "Estúdio" com os seguintes atributos: Nome, Ano de fundação, País de origem e Número de jogos produzidos. Na main, instancie um objeto e faça a leitura pelo teclado.
+
+3 - Crie uma classe chamada Carro que possua 3 atributos: marca, modelo e anoFabricacao. Além disso, na main crie 2 objetos do tipo Carro e exibir na tela os valores dos atributos criados. 
+Esses valores devem ser solicitados ao usuário, no programa.
+
+4 - Crie uma classe Livro com os atributos título, autor e ano de publicação. Faça a instanciação de 3 objetos e imprima as informações do livro na tela.
