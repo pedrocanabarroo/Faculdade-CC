@@ -1,0 +1,38 @@
+Desenvolver uma aplicação web utilizando ASP.NET Core com Razor Pages, com manipulação de arquivos texto, estruturação de dados, organização visual da interface e navegação entre páginas.
+
+Descrição do Projeto
+
+O trabalho consiste na criação de um sistema para Cadastro de Veículos, com as seguintes funcionalidades:
+• Cadastrar novos veículos
+• Listar todos os veículos cadastrados
+• Visualizar os detalhes de um veículo específico
+• Editar os dados de um veículo existente
+
+Os dados devem ser armazenados em arquivo texto (.txt) com formato estruturado, como separação por ponto e vírgula (;).
+
+Informações obrigatórias de cada veículo
+• Nome do veículo
+• Modelo
+• Marca
+• Renavam
+• Ano de fabricação
+• Ano do modelo
+• Foto do veículo (opcional)
+
+Se fornecida, a foto deve ser salva na pasta wwwroot/uploads e exibida na página de detalhes do veículo.
+
+Requisitos da aplicação
+
+A aplicação deve ser desenvolvida com ASP.NET Core usando Razor Pages e atender aos seguintes requisitos:
+• Formulário de cadastro de veículos
+• Página de listagem dos veículos cadastrados
+• Página de detalhes do veículo
+• Página de edição de dados
+• Todos os dados devem ser salvos e lidos de um arquivo texto
+• A imagem, se presente, deve ser exibida corretamente
+• Todas as páginas devem ser organizadas e visualmente agradáveis, com uso adequado de formulários, tabelas e exibição de dados.
+• A aplicação deve conter navegação entre páginas, permitindo que o usuário possa voltar para a listagem, cadastro ou página inicial a partir de qualquer outra tela.
+
+Entrega
+• Código-fonte da aplicação (.zip ou link para repositório Git).
+• Entrega e apresentação: 06/05/2025
