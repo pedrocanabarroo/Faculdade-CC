@@ -45,7 +45,8 @@ Universidade Franciscana (UFN)
 - Aplicativos Móveis
 - Engenharia e Requisitos de Software
 - Estruturas de Dados
+- Finanças Inteligentes: do Consumo ao Investimento
 - Linguagens Formais e Autômatos
-- Programação .NET
+- Programação Python
 - Projeto de Banco de Dados
 
