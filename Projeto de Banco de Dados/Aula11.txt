@@ -1,0 +1,62 @@
+show databases;
+use mydb;
+
+show tables;
+
+select * from atleta;
+
+insert into atleta values (1, "Maria");
+insert into atleta (nome) values ("Pedro");
+insert into atleta values (3, "Yasmin");
+insert into atleta values (4, "Rafael");
+insert into atleta values (5, "Daniel");
+
+insert into modalidade values (500, "Beach Tennis");
+insert into modalidade values (501, "Padel");
+insert into modalidade values (502, "Volei de Areia");
+
+
+insert into clube values (100, "Star Padel");
+insert into clube values (101, "Fair Play");
+insert into clube values (102, "Elite");
+insert into clube values (103, "8000 Sports");
+insert into clube values (104, "Pier Beach Tennis");
+
+
+insert into treinador values (1000, "Lucas", 100);
+insert into treinador values (1001, "Pato", 102);
+insert into treinador values (1002, "Jader", 103);
+insert into treinador values (1003, "Enrico", 104);
+
+
+insert into modalidadetreinador values (500, 1002);
+insert into modalidadetreinador values (500, 1003);
+insert into modalidadetreinador values (501, 1000);
+insert into modalidadetreinador values (501, 1001);
+
+
+insert into atletamodalidade values (1, 500);
+insert into atletamodalidade values (1, 501);
+insert into atletamodalidade values (2, 500);
+insert into atletamodalidade values (3, 502);
+insert into atletamodalidade values (4, 502);
+
+
+insert into modalidadeclube values (500, 100);
+insert into modalidadeclube values (500, 101);
+insert into modalidadeclube values (500, 103);
+insert into modalidadeclube values (500, 104);
+insert into modalidadeclube values (501, 100);
+insert into modalidadeclube values (501, 101);
+insert into modalidadeclube values (501, 102);
+
+select * from modalidadeclube;
+
+select * from atletamodalidade where atleta = 1;
+
+
+
+
+
+
+
