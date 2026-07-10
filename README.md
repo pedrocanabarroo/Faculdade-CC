@@ -55,7 +55,7 @@ Universidade Franciscana (UFN)
 ### 🔹 5º Semestre - 2026/2
 - Experiência do Usuário	
 - Implementação de Banco de Dados	
-- Laboratório de desenvoldimento de software	
+- Laboratório de Desenvolvimento de Software	
 - Pesquisa e Ordenação	
 - Segurança Digital	
 - Sistemas Distribuídos	
