@@ -50,3 +50,14 @@ Universidade Franciscana (UFN)
 - Programação Python
 - Projeto de Banco de Dados
 
+---
+
+### 🔹 5º Semestre - 2026/2
+- Experiência do Usuário	
+- Implementação de Banco de Dados	
+- Laboratório de desenvoldimento de software	
+- Pesquisa e Ordenação	
+- Segurança Digital	
+- Sistemas Distribuídos	
+- Tolerância a Falhas	
+
