@@ -59,5 +59,5 @@ Universidade Franciscana (UFN)
 - Pesquisa e Ordenação	
 - Segurança Digital	
 - Sistemas Distribuídos	
-- Tolerância a Falhas	
+- Tecnologias Inteligentes Aplicadas à Saúde	
 
